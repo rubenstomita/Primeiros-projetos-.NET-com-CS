@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EstruturaDoPrograma
+namespace Classes
 {
     class Program
     {
