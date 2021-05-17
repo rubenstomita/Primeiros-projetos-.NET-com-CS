@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "neikeq.godot-csharp-vscode",
+        "oleg-shilo.cs-script",
+        "vassilik.cscs-debugger",
+        "dennismaxjung.vscode-dotnet-auto-attach",
+        "ms-dotnettools.vscode-dotnet-pack"
+    ]
+}
