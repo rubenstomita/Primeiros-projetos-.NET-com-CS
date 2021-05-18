@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Revisao
 {
@@ -6,14 +6,8 @@ namespace Revisao
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Informe a opção desejada:");
-            Consele.WriteLine("1- Inserir novo aluno");
-            Console.WriteLine("2- Listar alunos");
-            Console.WriteLine("3- Calcular média geral");
-            Console.WriteLine("X- Sair");
-            Console.WriteLine();
+            string opcaoUsuario = ObterOpcaoUsuario();
 
-            string opcaoUsuario = Console.ReadLine();
             while (opcaoUsuario.ToUpper() != "X")
             {
                 switch (opcaoUsuario)
@@ -30,16 +24,20 @@ namespace Revisao
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
-
-                Console.WriteLine("Informe a opção desejada:");
-                Consele.WriteLine("1- Inserir novo aluno");
-                Console.WriteLine("2- Listar alunos");
-                Console.WriteLine("3- Calcular média geral");
-                Console.WriteLine("X- Sair");
-                Console.WriteLine();
-
-                opcaoUsuario = Console.ReadLine();  
+                opcaoUsuario = ObterOpcaoUsuario(); 
             }
+        }
+        private static string ObterOpcaoUsuario()
+        {
+            Console.WriteLine("Informe a opção desejada:");
+            Console.WriteLine("1- Inserir novo aluno");
+            Console.WriteLine("2- Listar alunos");
+            Console.WriteLine("3- Calcular média geral");
+            Console.WriteLine("X- Sair");
+            Console.WriteLine();
+
+            string opcaoUsuario = Console.ReadLine();
+            return opcaoUsuario;
         }
     }
 }
